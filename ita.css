@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -252,7 +253,6 @@ a {
     }
 
     footer {
-        margin-top: 20px;
         height: 30px;
         background-color: #1e1e1e;
         color: #fff;
