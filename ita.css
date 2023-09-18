@@ -1,0 +1,230 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(251,251,246,1) 0%, rgba(228,228,219,1) 100%);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Dancing Script', cursive;    
+    margin: 0;
+}
+
+.fecha {
+    font-family: 'Dancing Script', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.percha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #d3bcb3;
+}
+
+.tiempo {
+    text-align: center;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media only screen and (min-width: 1px) {
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .mi-casa {
+        padding-top: 10px;
+        font-size: 2rem;
+    }
+
+    .fecha {
+        font-size: 1rem;
+    }
+
+    .cuadro-uno {
+        width: 95%;
+        padding: 20px;
+        max-height: fit-content;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .cuadro-dos {
+        width: 70%;
+        height: 150px;
+        margin: 40px auto;
+        padding-top: 15px;
+        background-color: #fff;
+        border: 1px solid #6d6d6d;
+        border-radius: 5px;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    .cuadro-imagen {
+        width: 70%;
+        height: 300px;
+        margin: 40px auto;
+        padding-top: 15px;
+        background-color: #fff;
+    }
+
+    .ubicacion {
+        align-self: center;
+    }
+
+    .cuadro-cuatro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 70%;
+        height: 270px;
+        margin: 40px auto;
+        padding-top: 15px;
+        background-color: #fff;
+        border: 1px solid #6d6d6d;
+        border-radius: 5px;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    .cuadro-cinco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 70%;
+        height: 300px;
+        margin: 40px auto;
+        padding-top: 15px;
+        background-color: #fff;
+        border: 1px solid #6d6d6d;
+        border-radius: 5px;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    .cuadro-seis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 170px;
+        margin: 40px auto;
+        padding-top: 15px;
+        background-color: #fff;
+        border: 1px solid #6d6d6d;
+        border-radius: 5px;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    .cuadro-siete {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 220px;
+        margin: 40px auto;
+        padding-top: 15px;
+        background-color: #fff;
+        border: 1px solid #6d6d6d;
+        border-radius: 5px;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    .cuadro-siete span {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cuadro-cinco span {
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    .cuadro-cuatro p {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 50%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #6d6d6d;
+        background-color: #d3bcb3;
+        cursor: pointer;
+    }
+
+    .tiempo-numeros, .tiempo-letras {
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .tiempo-numeros {
+        font-size: 2rem;
+    }
+
+    .tiempo-letras {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .cuadro-cuatro .malla {
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .musica {
+        margin-bottom: 30px;
+    }
+
+    #cuadro-cuatro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 170px;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+    
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.mi-dia {
+    text-align: center;
+    margin: 0;
+}
