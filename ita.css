@@ -57,11 +57,20 @@ a {
     }
 
     .cuadro-uno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         width: 95%;
+        height: 90px;
         padding: 20px;
         max-height: fit-content;
         padding: 10px;
         background-color: #fff;
+    }
+
+    .cuadro-uno span {
+        text-align: center;
     }
 
     .cuadro-dos {
@@ -85,6 +94,10 @@ a {
 
     .ubicacion {
         align-self: center;
+    }
+
+    .corazon {
+        margin-top: 20px;
     }
 
     .cuadro-cuatro {
@@ -121,7 +134,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         width: 70%;
         height: 170px;
         margin: 40px auto;
@@ -147,6 +160,18 @@ a {
         box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
     }
 
+    .cuadro-ocho {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cuadro-ocho span {
+        text-align: center;
+        width: 70%;
+    }
+
     .cuadro-siete span {
         width: 80%;
         margin: 0 auto;
@@ -166,6 +191,8 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.2rem;
         margin-top: 20px;
         width: 50%;
         height: 40px;
@@ -173,6 +200,22 @@ a {
         border: 1px solid #6d6d6d;
         background-color: #d3bcb3;
         cursor: pointer;
+    }
+
+    .ita-final {
+        font-family: 'Dancing Script', cursive;
+        font-size: 4rem;
+        margin: 10px auto;
+    }
+
+    .espero {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.4rem;
+    }
+
+    .confirmar {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
     }
 
     .tiempo-numeros, .tiempo-letras {
@@ -221,10 +264,11 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 .mi-dia {
     text-align: center;
     margin: 0;
+    font-weight: 600;
 }
