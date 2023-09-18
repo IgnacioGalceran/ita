@@ -44,7 +44,7 @@ a {
 @media only screen and (min-width: 1px) {
 
     h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .mi-casa {
@@ -62,7 +62,7 @@ a {
         align-items: center;
         justify-content: space-evenly;
         width: 95%;
-        height: 90px;
+        height: 150px;
         padding: 20px;
         max-height: fit-content;
         padding: 10px;
@@ -70,6 +70,7 @@ a {
     }
 
     .cuadro-uno span {
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -98,6 +99,7 @@ a {
 
     .corazon {
         margin-top: 20px;
+        text-align: center;
     }
 
     .cuadro-cuatro {
