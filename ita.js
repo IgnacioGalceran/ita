@@ -6,12 +6,50 @@ const dayD = document.getElementById('day-d');
 const hourH = document.getElementById('hour-h');
 const minuteM = document.getElementById('minute-m');
 const secondS = document.getElementById('second-s');
+const divIMG = document.querySelectorAll('.cuadro-imagen');
+const buttons = document.querySelectorAll('.button');
+let targetDate = new Date('2023-12-17').getTime();
+
+buttons.forEach((el) => {
+  el.classList.add('falling-button');
+})
 
 function agregarCeros(valor) {
   return valor < 10 ? `0${valor}` : valor;
 }
 
-let targetDate = new Date('2023-12-17').getTime();
+function isElementInViewport(el, offset) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.bottom >= 0 + offset &&
+    rect.right >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) - offset &&
+    rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function toggleElementsOnScroll() {
+  buttons.forEach((el) => {
+    if (isElementInViewport(el, -200)) {
+      el.classList.add('falling-button');
+    } else {
+      el.classList.remove('falling-button');
+    }
+  });
+
+  divIMG.forEach((el) => {
+    if (isElementInViewport(el, 0)) {
+      el.classList.remove('hidden');
+      el.classList.add('visible');
+    } else {
+      el.classList.remove('visible');
+      el.classList.add('hidden');
+    }
+  });
+}
+
+window.addEventListener('scroll', toggleElementsOnScroll);
+toggleElementsOnScroll();
 
 let countdown = setInterval(function() {
   let currentDate = new Date().getTime();

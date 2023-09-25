@@ -6,7 +6,32 @@ body, html {
 
 body {
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(251,251,246,1) 0%, rgba(228,228,219,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(249, 249, 239) 0%, rgb(226, 226, 212) 100%);
+}
+
+.hidden {
+    transition: opacity 1.3s;
+    opacity: 0.2;
+}
+
+.visible {
+    transition: opacity 1.3s;
+    opacity: 1;
+}
+
+@keyframes falling-animation {
+    from {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+.falling-button {
+    animation: falling-animation 1s ease forwards;
 }
 
 h1 {
