@@ -38,7 +38,7 @@ body {
 }
   
 .falling-button {
-    animation: falling-animation 1s ease forwards;
+    animation: falling-animation 1.5s ease forwards;
 }
 
 h1 {
