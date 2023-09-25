@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Prompt:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <main class="content">
@@ -19,80 +20,82 @@
         <h2 class="fecha">17-12-2023</h2>
     </div>
   </main>
-  <section class="cuadro-uno">
-    <span>15 años, mezcla rara, dulce y hermosa... Edad de sueños, emociones y nuevas experiencias.Porque sos parte de mi vida y simplemente te quiero, te invito a compartir...
-    </span>
-    <p class="mi-dia">¡Mi día!</p>
-  </section>
-  <section class="cuadro-dos">
-    <h2 class="tiempo">¿Cuánto falta?</h2>
-    <div class="tiempo-numeros">
-      <div>
-        <span id="day"></span>
-        <span id="day-d"></span>
+  <div class="section-container">
+    <section class="cuadro-uno">
+      <span>15 años, mezcla rara, dulce y hermosa... Edad de sueños, emociones y nuevas experiencias. Porque sos parte de mi vida y simplemente te quiero, te invito a compartir...
+      </span>
+      <p class="mi-dia">¡Mi día!</p>
+    </section>
+    <section class="cuadro-dos">
+      <h2 class="tiempo">¿Cuánto falta?</h2>
+      <div class="tiempo-numeros">
+        <div>
+          <span id="day"></span>
+          <span id="day-d"></span>
+        </div>
+        <div>
+          <span id="hour"></span>
+          <span id="hour-h"></span>
+        </div>
+        <div>
+          <span id="minute"></span>
+          <span id="minute-m"></span>
+        </div>
+        <div>
+          <span id="second"></span>
+          <span id="second-s"></span>
+        </div>
       </div>
-      <div>
-        <span id="hour"></span>
-        <span id="hour-h"></span>
+    </section>
+    <section class="cuadro-imagen">
+  
+    </section>
+    <section class="cuadro-cuatro">
+      <img class="ubicacion" width="70px" height="70px" src="./imagenes/ubicacion.png">
+      <h1 class="mi-casa">Mi casa</h2>
+      <p>Calle 57 N° 649</p>
+      <p>De 07:30 a 20:00</p>
+      <a class="button" target="_blank" href="https://www.google.com/maps/place/34%C2%B000'11.4%22S+61%C2%B036'34.9%22W/@-34.0031628,-61.61228,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-34.0031628!4d-61.6097051?hl=es-AR&entry=ttu">Cómo llegar</a>
+    </section>
+    <section class="cuadro-imagen">
+      
+    </section>
+    <section id="cuadro-cuatro" class="cuadro-cuatro">
+      <div class="percha-container">
+          <span class="material-symbols-outlined percha">
+              checkroom
+          </span>
       </div>
-      <div>
-        <span id="minute"></span>
-        <span id="minute-m"></span>
-      </div>
-      <div>
-        <span id="second"></span>
-        <span id="second-s"></span>
-      </div>
-    </div>
-  </section>
-  <section class="cuadro-imagen">
-
-  </section>
-  <section class="cuadro-cuatro">
-    <img class="ubicacion" width="70px" height="70px" src="./imagenes/ubicacion.png">
-    <h1 class="mi-casa">Mi casa</h2>
-    <p>Calle 57 N° 649</p>
-    <p>De 07:30 a 20:00</p>
-    <a class="button" target="_blank" href="https://www.google.com/maps/place/34%C2%B000'11.4%22S+61%C2%B036'34.9%22W/@-34.0031628,-61.61228,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-34.0031628!4d-61.6097051?hl=es-AR&entry=ttu">Cómo llegar</a>
-  </section>
-  <section class="cuadro-imagen">
-    
-  </section>
-  <section id="cuadro-cuatro" class="cuadro-cuatro">
-    <div class="percha-container">
-        <span class="material-symbols-outlined percha">
-            checkroom
-        </span>
-    </div>
-    <p class="malla">Si queres, traé tu malla</p>
-  </section>
-  <section class="cuadro-imagen">
-    
-  </section>
-  <section class="cuadro-cinco">
-    <img width="70px" height="70px" src="./imagenes/musica.png">
-    <span class="musica">¡Quiero que nos divirtamos juntos!</span>
-    <span>Ayudame desde ahora a hacer</span> 
-    <span>la playlist para ese día con las canciones que no pueden faltar!</span> 
-    <a class="button" target="_blank" href="https://spotify.link/InwxOehjbDb">Playlist</a>
-  </section>
-  <section class="cuadro-imagen">
-  </section>
-  <section class="cuadro-seis">
-    <img width="70px" height="70px" src="./imagenes/corazon.png">
-    <span class="corazon">¡El mejor regalo para mí, es tu compañía!</span>
-  </section>
-  <section class="cuadro-siete">
-    <h3 class="confirmar">Confirmá tu asistencia</h3>
-    <span>Para mi es muy importante que confirmes esta invitación, dejame tu mensaje</span> 
-    <a class="button" target="_blank" href="https://wa.me/543462590896">Confirmación</a>
-  </section>
-  <section class="cuadro-ocho">
-    <span>Los momentos más felices de la vida son cuando tenemos la suerte de compartirlos con los amigos más queridos.</span>
-    <p>Vos estás entre ellos.</p>
-    <p class="espero">¡Te espero!</p>
-    <h2 class="ita-final">Ita</h2>
-  </section>
+      <p class="malla">Si querés, traé tu malla</p>
+    </section>
+    <section class="cuadro-imagen">
+      
+    </section>
+    <section class="cuadro-cinco">
+      <img width="70px" height="70px" src="./imagenes/musica.png">
+      <span class="musica">¡Quiero que nos divirtamos juntos!</span>
+      <span>Ayudame desde ahora a hacer</span> 
+      <span>la playlist para ese día con las canciones que no pueden faltar!</span> 
+      <a class="button" target="_blank" href="https://spotify.link/InwxOehjbDb">Playlist</a>
+    </section>
+    <section class="cuadro-imagen">
+    </section>
+    <section class="cuadro-seis">
+      <img width="70px" height="70px" src="./imagenes/corazon.png">
+      <span class="corazon">¡El mejor regalo para mí, es tu compañía!</span>
+    </section>
+    <section class="cuadro-siete">
+      <h3 class="confirmar">Confirmá tu asistencia</h3>
+      <span>Para mi es muy importante que confirmes esta invitación, dejame tu mensaje</span> 
+      <a class="button" target="_blank" href="https://wa.me/543462590896">Confirmación</a>
+    </section>
+    <section class="cuadro-ocho">
+      <span>Los momentos más felices de la vida son cuando tenemos la suerte de compartirlos con los amigos más queridos.</span>
+      <p>Vos estás entre ellos.</p>
+      <p class="espero">¡Te espero!</p>
+      <h2 class="ita-final">Ita</h2>
+    </section>
+  </div>
   <footer>
     &reg Aplicaciones web - Ignacio Galcerán
   </footer>
