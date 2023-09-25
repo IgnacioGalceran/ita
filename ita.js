@@ -8,7 +8,29 @@ const minuteM = document.getElementById('minute-m');
 const secondS = document.getElementById('second-s');
 const divIMG = document.querySelectorAll('.cuadro-imagen');
 const buttons = document.querySelectorAll('.button');
+const musicButton = document.getElementById('music-button');
+const musicText = document.getElementById('music-text');
+const music = document.getElementById('music');
+const play = document.getElementById('play');
+const pause = document.getElementById('pause');
 let targetDate = new Date('2023-12-17').getTime();
+let isPlaying = false;
+
+musicButton.addEventListener('click', () => {
+  if (isPlaying) {
+    music.pause();
+    musicText.textContent = 'Dale play!';
+    pause.classList.add('invisible');
+    play.classList.remove('invisible');
+  } else {
+    music.play();
+    musicText.textContent = 'Pausa';
+    play.classList.add('invisible');
+    pause.classList.remove('invisible');
+  }
+
+  isPlaying = !isPlaying;
+});
 
 buttons.forEach((el) => {
   el.classList.add('falling-button');
