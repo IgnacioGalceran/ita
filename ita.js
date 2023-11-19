@@ -1,6 +1,9 @@
 const day = document.getElementById('day');
+const puntoD =  document.getElementById('puntoD');
 const hour = document.getElementById('hour');
+const puntoH =  document.getElementById('puntoH');
 const minute = document.getElementById('minute');
+const puntoM =  document.getElementById('puntoM');
 const second = document.getElementById('second');
 const dayD = document.getElementById('day-d');
 const hourH = document.getElementById('hour-h');
@@ -13,7 +16,7 @@ const musicText = document.getElementById('music-text');
 const music = document.getElementById('music');
 const play = document.getElementById('play');
 const pause = document.getElementById('pause');
-let targetDate = new Date('2023-12-17').getTime();
+let targetDate = new Date('2023-12-17 14:30:00').getTime();
 let isPlaying = false;
 
 musicButton.addEventListener('click', () => {
@@ -87,19 +90,27 @@ let countdown = setInterval(function() {
 
   day.innerHTML = `${days}`;
   dayD.innerHTML = 'Días';
+  puntoD.innerHTML = ':';
   hourH.innerHTML = 'Horas';
+  puntoH.innerHTML = ':';
   minuteM.innerHTML = 'Minutos';
+  puntoM.innerHTML = ':';
   secondS.innerHTML = 'Segundos';
 
   if (timeLeft <= 0) {
     clearInterval(countdown);
     day.innerHTML = "0";
-    hour.innerHTML = "00";
-    minute.innerHTML = "00";
-    second.innerHTML = "00";
-    dayD.innerHTML = '';
-    hourH.innerHTML = '';
-    minuteM.innerHTML = '';
-    secondS.innerHTML = '';
+    hour.innerHTML = "0";
+    minute.innerHTML = "0";
+    second.innerHTML = "0";
+    dayD.innerHTML = 'Dias';
+    hourH.innerHTML = 'Horas';
+    minuteM.innerHTML = 'Minutos';
+    secondS.innerHTML = 'Segundos';
+    puntoM.innerHTML = ':';
+    puntoD.innerHTML = ':';
+    puntoH.innerHTML = ':';
+  } else {
+    
   }
 }, 1000);

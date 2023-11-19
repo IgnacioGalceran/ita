@@ -158,8 +158,8 @@ h1 {
 }
 
 .cuadro-imagen {
-  width: 320px;
-  height: 480.75px;
+  width: 300px;
+  height: 450.7042px;
   margin: 40px auto;
   background-color: #fff;
   border: 4px solid white;
@@ -314,6 +314,19 @@ h1 {
   font-size: 1rem;
   margin: 0;
   padding: 30px 0;
+}
+
+.tiempo-container {
+  position: relative;
+}
+
+.punto {
+  position: absolute;
+  font-family: "Dancing Script", cursive;
+  top: -20px;
+  right: -10px;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .tiempo-numeros span {
